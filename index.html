@@ -3,25 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator Luas Persegi</title>
+    <title>Katik - Kalkulator Matematika</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="header">Luas Persegi</div>
-    <div class="container">
+
+    <!-- Header -->
+    <header>
+        <h1><span class="blue-text">Katik</span> Kalkulator Matematika</h1>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <h2>Welcome to Katik</h2>
+        <p>Hai Sobat, Selamat datang di Katik :)</p>
+        <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+        <div class="nav-buttons">
+            <button class="nav-btn active">Persegi</button>
+            <button class="nav-btn">P. Panjang</button>
+        </div>
+    </section>
+
+    <!-- Kalkulator Persegi -->
+    <section class="calculator">
+        <h2>Luas & Keliling Persegi</h2>
         <img src="assets/Persegi.png" alt="Bujur sangkar">
-        <p>Rumus Luas Persegi yaitu :</p>
-        <h3>L = S x S</h3>
+        <p>Rumus:</p>
+        <h3>Luas: L = S x S</h3>
+        <h3>Keliling: K = 4 x S</h3>
         <p>Di mana:</p>
-        <p>L = Luas</p>
-        <p>S = Sisi</p>
-        <h2>Hitung Luas Persegi</h2>
+        <p>L = Luas, K = Keliling, S = Sisi</p>
+
+        <h3>Hitung Persegi</h3>
         <input type="number" id="sisi" placeholder="Masukkan panjang sisi">
         <br>
-        <button onclick="hitungLuas()">Hitung</button>
-        <button class="reset" onclick="resetForm()">Reset</button>
+        <button class="hitung-btn" onclick="hitungLuasKeliling()">Hitung</button>
+        <button class="reset-btn" onclick="resetForm()">Reset</button>
         <div class="result" id="hasil"></div>
-    </div>
+    </section>
+
     <script src="js/script.js"></script>
 </body>
 </html>
