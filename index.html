@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Luas Persegi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">Luas Persegi</div>
+    <div class="container">
+        <img src="assets/Persegi.png" alt="Bujur sangkar">
+        <p>Rumus Luas Persegi yaitu :</p>
+        <h3>L = S x S</h3>
+        <p>Di mana:</p>
+        <p>L = Luas</p>
+        <p>S = Sisi</p>
+        <h2>Hitung Luas Persegi</h2>
+        <input type="number" id="sisi" placeholder="Masukkan panjang sisi">
+        <br>
+        <button onclick="hitungLuas()">Hitung</button>
+        <button class="reset" onclick="resetForm()">Reset</button>
+        <div class="result" id="hasil"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
